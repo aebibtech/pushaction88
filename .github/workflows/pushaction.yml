@@ -1,8 +1,7 @@
 name: Push Action
-on:
-  push:
-    branches: 
-      - 'feature/**' 
+on: [push,pull]
+branches: ['feature/**'] 
+
 jobs:
   build:
     name: Build project
