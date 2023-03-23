@@ -14,7 +14,8 @@ class GitCommand {
         let changes = 0;
         if(this.working_directory.new_changes.length === 0){
             return `You have ${changes} change/s.\n`;
-        }else{
+        }
+        else{
             const newChanges = Object.keys(this.working_directory.new_changes);
             changes = newChanges.length;
             
